@@ -1,6 +1,6 @@
 header.navigation {
   $navigation-padding: 1em;
-  $navigation-background: $dark-gray;
+  $navigation-background: #4caf50;
   $navigation-color: transparentize(white, 0.3);
   $navigation-color-hover: white;
   $navigation-height: 60px;
@@ -15,7 +15,7 @@ header.navigation {
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
+  border-bottom: 1px solid $navigation-background;
   height: $navigation-height;
   width: 100%;
   z-index: 999;
@@ -25,6 +25,12 @@ header.navigation {
     @include outer-container;
     position: relative;
     z-index: 9999;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #4caf50;  
   }
 
   .logo {
