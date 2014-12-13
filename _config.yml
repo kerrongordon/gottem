@@ -1,8 +1,8 @@
 # Site settings
 image_location: assets/img
 javascript_location: assets/js
-url: "http://gsetri.com" # the base hostname & protocol for your site
-baseurl: "/gottem" # the subpath of your site, e.g. /blog/
+url: "http://www.gsetri.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
 
 # Build settings
 markdown: kramdown
