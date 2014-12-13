@@ -1,0 +1,26 @@
+.nav {
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: -275px;
+    height: 100%;
+    width: 275px;
+    padding: 20px;
+    border-right: solid 1px black;
+    @include transition(left 0.3s ease);
+}
+
+.body {
+    left: 0;
+    @include transition(left 0.3s ease);
+}
+
+.moveOver {
+    position: relative;
+    overflow-x: hidden;
+    left: 275px;
+    
+    .nav {
+        left: 0;
+    }
+}
