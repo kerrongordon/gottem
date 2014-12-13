@@ -83,14 +83,9 @@ header.navigation {
     display: none;
     margin: 0 auto;
     overflow: scroll;
+    padding: 0;
+    width: 100%;
     z-index: 9999;
-    position: fixed;
-    width: 300px;
-    top: 60px;
-    right: 0;
-    height: 100%;
-    padding: 20px;
-    background: #4caf50;
 
     @include media ($horizontal-bar-mode) {
       display: inline;
