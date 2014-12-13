@@ -17,10 +17,37 @@
 
 .moveOver {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     left: 275px;
     
     .nav {
         left: 0;
+        overflow-y: scroll;
+    }
+}
+
+.navigation-menu-button {
+    position: fixed;
+    background: #4caf50;
+    height: 45px;
+    width: 45px;
+    z-index: 99999;
+    color: #fff;
+    top: 20px;
+    left: 0;
+    padding: 13px 10px;
+}
+
+
+#navigation-menu {
+    margin-top: 75px;
+    
+    li {
+        border-bottom: solid 1px rgb(82, 82, 82);
+        padding: 10px 0;
+        
+        a {
+            display: block;
+        }
     }
 }
