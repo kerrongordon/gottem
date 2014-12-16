@@ -19,12 +19,14 @@
   $grid-item-color: #555;
   $grid-item-height: 19em;
   @include outer-container;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   @include clearfix;
     
   .grid-item {
     @include transition (all 0.2s ease-in-out);
-    height: $grid-item-height;
+    height: auto;
     //background: $grid-item-background;
     width: 100%;
     overflow: hidden;
@@ -35,6 +37,10 @@
     border-left: $grid-item-border-size /2 solid transparent; //$grid-items-background;
     border-right: $grid-item-border-size /2 solid transparent; //$grid-items-background;
     text-align: center;
+      
+      &:hover {
+        background-color: #ccc;
+      }
     
 
     @include media($medium-screen) {

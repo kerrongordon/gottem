@@ -1,0 +1,17 @@
+.page-contact {
+    @include outer-container;
+    background: #4caf50;
+    padding: 50px 20px;
+    
+    .section-title {
+        text-align: center;
+    }
+    
+    .main-form {
+        @include span-columns(12);
+        
+        textarea {
+            height: 250px;
+        }
+    }
+}
